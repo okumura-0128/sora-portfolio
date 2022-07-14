@@ -59,9 +59,12 @@
   }
   
   
-/* container */
 .wrapper{
     width:100%;
+    background-image:url(img/sky.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
 }
 .wrapper .container{
     max-width:1000px;
@@ -69,17 +72,31 @@
     padding:80px 0px;
 }
 /* content */
-.wrapper .content {
-    padding:50px;
-    text-align:center;
-}
 .wrapper .content .heading{
     margin:0px 0px 40px 0px;
+    color:#ffffff;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
 }
-
+@media (min-width: 992px) {
+    .wrapper .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.wrapper .content .list-item {
+    padding:30px;
+    line-height:1.8rem;
+    color:#ffffff;
+    text-align:center;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list-item {
+        width:50%;
+    }
+}
 
   
   nav {
