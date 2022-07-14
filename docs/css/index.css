@@ -57,14 +57,12 @@
   a:hover{
      text-decoration: none;   
   }
-  
-  
+
+
+/* container */
 .wrapper{
     width:100%;
-    background-image:url(img/sky.webp);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center center;
+    background-color:#fafafa;
 }
 .wrapper .container{
     max-width:1000px;
@@ -72,31 +70,40 @@
     padding:80px 0px;
 }
 /* content */
-.wrapper .content .heading{
-    margin:0px 0px 40px 0px;
-    color:#ffffff;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
 @media (min-width: 992px) {
-    .wrapper .content .list {
+    .wrapper .container .content {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
-.wrapper .content .list-item {
-    padding:30px;
-    line-height:1.8rem;
-    color:#ffffff;
-    text-align:center;
+.wrapper .content-item {
+    width:100%;
 }
 @media (min-width: 992px) {
-    .wrapper .content .list-item {
+    .wrapper .content-item {
         width:50%;
     }
 }
+.wrapper .image{
+    display:block;
+    max-width:100%;
+    margin:0px auto;
+}
+.wrapper .text{
+    padding:50px;
+}
+.wrapper .text .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+.text p {
+    text-align: center;
+    font-size: 20px;
+}
+
 
   
   nav {
