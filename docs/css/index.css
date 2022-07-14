@@ -73,7 +73,7 @@
     padding:50px;
     text-align:center;
 }
-.wrapper .content .heading{
+.wrapper .content .heading.main{
     margin:0px 0px 40px 0px;
     font-size: 24px;
     font-weight: normal;
