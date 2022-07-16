@@ -1,42 +1,33 @@
 /*========= LoadingのためのCSS ===============*/
 
 /* Loading背景画面設定　*/
+
 #splash {
     /*fixedで全面に固定*/
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 100%;
-  z-index: 999;
   background:#333;
   text-align:center;
   color:#fff;
-  }
-  
-  /* Loading画像中央配置　*/
-  #splash_logo {
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
   position: absolute;
   top: 50%;
   left: 50%;
+    z-index: 999;
+  width: 100%;
   transform: translate(-50%, -50%);
-  }
-  
-  /* Loading アイコンの大きさ設定　*/
-  #splash_logo svg{
-  width:300px;
-  }
-  
-  /*========= SVG操作手書き風にするためのCSS ===============*/
-  
-  #mask .st0{
-    fill:none;
-    stroke:#fff;
-    stroke-width:90;/*線の太さを指定する*/
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
-    stroke-dasharray: 1500; /* 線の間隔を指定する */
-    stroke-dashoffset:1500; /* 線の位置を指定する */
-  }
+  color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
   
   /*========= レイアウトのためのCSS ===============*/
   
