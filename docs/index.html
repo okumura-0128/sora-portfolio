@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
     <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
@@ -23,6 +23,7 @@
         <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
         <ul>
         <li><a href="#">About</a></li>  
+        <li><a href="#">Ten's daily life photos</a></li> 
         <li><a href="#">Skill</a></li>  
         <li><a href="#">Field</a></li>  
         <li><a href="#">Works</a></li>  
@@ -64,6 +65,29 @@
                 <li>趣味：漫画を読む</li>
                 <li>目標：つよつよになる</li>
             </ul>
+
+            <h3 id="Ten's daily life photos">Ten's daily life photos</h3>
+            <ul class="gallery">
+                <li><a href="img/aozora.jpeg" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/aozora.jpeg" alt=""></a></li>
+                <li><a href="img/usj_raito.jpg" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/usj_raito.jpg" alt=""></a></li>
+                <li><a href="img/dokomiteru_hayaki.JPG" data-title="グループ1キャプション"><img src="img/dokomiteru_hayaki.JPG" alt=""></a></li>
+                <li><a href="img/hanabi.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/hanabi.JPG" alt=""></a></li>
+                <li><a href="img/tenimura3.jpeg" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/tenimura3.jpeg" alt=""></a></li>
+                <li><a href="img/yuniba.JPG" data-lightbox="gallery2" data-title="グループ2キャプション"><img src="img/yuniba.JPG" alt=""></a></li>
+                <li><a href="img/hansya.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/hansya.JPG" alt=""></a></li>
+                <li><a href="img/minnnakao.jpeg" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/minnnakao.jpeg" alt=""></a></li>
+                <li><a href="img/nyugakusiki.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/nyugakusiki.JPG" alt=""></a></li>
+                <li><a href="img/sunu-piokumura.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/sunu-piokumura.JPG" alt=""></a></li>
+                <li><a href="img/okumurasora.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/okumurasora.JPG" alt=""></a></li>
+                <li><a href="img/ikimonodarakeokumura.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/ikimonodarakeokumura.JPG" alt=""></a></li>
+                <li><a href="img/syasinnokumura.jpeg" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/syasinnokumura.jpeg" alt=""></a></li>
+                <li><a href="img/yuuhi.JPG" data-lightbox="gallery2" data-title="グループ2キャプション"><img src="img/yuuhi.JPG" alt=""></a></li>
+                <li><a href="img/usj_raito2.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/usj_raito2.JPG" alt=""></a></li>
+                <li><a href="img/tenimura2.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/tenimura2.JPG" alt=""></a></li>
+                <li><a href="img/yozakura.JPG" data-lightbox="gallery2" data-title="グループ2キャプション"><img src="img/yozakura.JPG" alt=""></a></li>
+                <li><a href="img/tennis_okumura.JPG" data-lightbox="gallery1" data-title="グループ1キャプション"><img src="img/tennis_okumura.JPG" alt=""></a></li>
+              </ul>
+
 
             <h3 id="skill">Skill</h3>
             <ul>
@@ -126,13 +150,14 @@
         <!--==============JQuery読み込み===============-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 <!--IE11用-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
-<script src="js/yomikomi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
 <!-- 自作のjave script -->
+<script src="js/yomikomi.js"></script>
 <script src="js/navgesion.js"></script>
+<script src="js/gallery.js"></script>
 </body>
 </html>
