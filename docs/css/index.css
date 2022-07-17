@@ -345,6 +345,15 @@ opacity: 0;
     width:100%;
     height:auto;
     vertical-align: bottom;/*画像の下にできる余白を削除*/}
+
+  /*　横幅1200px以下の段組み設定　*/
+  @media only screen and (max-width: 1200px) {
+    .before1{
+    columns:4;
+    } 
+  }
+
+
   
   /*　横幅900px以下の段組み設定　*/
   @media only screen and (max-width: 900px) {
