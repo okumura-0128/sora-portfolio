@@ -29,130 +29,8 @@
     height: 2px;
 }
 
-/*==================================================
-ギャラリーのためのcss
-===================================*/
-.gallery{
-    columns: 4;/*段組みの数*/
-    padding:0 15px;/*ギャラリー左右に余白をつける*/
-    }
-    
-    .gallery li {
-        margin-bottom: 20px;/*各画像下に余白をつける*/
-    }
-    
-    /*ギャラリー内のイメージは横幅100%にする*/
-    .gallery img{
-      width:100%;
-      height:auto;
-      vertical-align: bottom;/*画像の下にできる余白を削除*/}
-    
-    /*　横幅900px以下の段組み設定　*/
-    @media only screen and (max-width: 900px) {
-      .gallery{
-      columns:3;
-      } 
-    }
-    
-    @media only screen and (max-width: 768px) {
-      .gallery{
-      columns: 2;
-      } 
-    }
-    
-
-/*画像を出現させるアニメーションCSS*/
-
-.flipLeft{
-    animation-name: flipLeft;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    perspective-origin: left center;
-    opacity: 0;
-    }
-    
-    @keyframes flipLeft{
-      from {
-       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
-      opacity: 0;
-      }
-    
-      to {
-      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-      opacity: 1;
-      }
-    }
 
 
-  
-  /*========= レイアウトのためのCSS ===============*/
-  
-  #container{
-    width:100%;
-    height: 100vh;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  a{
-    color: #333;
-  }
-  
-  a:hover{
-     text-decoration: none;   
-  }
-
-
-/* container */
-.wrapper{
-    width:100%;
-    background-color:#fafafa;
-}
-.wrapper .container{
-    max-width:1000px;
-    margin:0px auto;
-    padding:80px 0px;
-}
-/* content */
-@media (min-width: 992px) {
-    .wrapper .container .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-.wrapper .content-item {
-    width:100%;
-}
-@media (min-width: 992px) {
-    .wrapper .content-item {
-        width:50%;
-    }
-}
-.wrapper .image{
-    display:block;
-    max-width:100%;
-    margin:0px auto;
-}
-.wrapper .text{
-    padding:50px;
-}
-.wrapper .text .heading{
-    margin:0px 0px 40px 0px;
-    font-size: 28px;
-    font-weight: normal;
-    text-align: center;
-}
-.text p {
-    text-align: center;
-    font-size: 20px;
-}
-
-
-  
 /*アクティブになったエリア*/
 #g-nav.panelactive{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -302,6 +180,137 @@ opacity: 1;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
+
+
+
+
+
+
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery{
+    columns: 4;/*段組みの数*/
+    padding:0 15px;/*ギャラリー左右に余白をつける*/
+    }
+    
+    .gallery li {
+        margin-bottom: 20px;/*各画像下に余白をつける*/
+    }
+    
+    /*ギャラリー内のイメージは横幅100%にする*/
+    .gallery img{
+      width:100%;
+      height:auto;
+      vertical-align: bottom;/*画像の下にできる余白を削除*/}
+    
+    /*　横幅900px以下の段組み設定　*/
+    @media only screen and (max-width: 900px) {
+      .gallery{
+      columns:3;
+      } 
+    }
+    
+    @media only screen and (max-width: 768px) {
+      .gallery{
+      columns: 2;
+      } 
+    }
+    
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft{
+    animation-name: flipLeft;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    perspective-origin: left center;
+    opacity: 0;
+    }
+    
+    @keyframes flipLeft{
+      from {
+       transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+      opacity: 0;
+      }
+    
+      to {
+      transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+      opacity: 1;
+      }
+    }
+
+    
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  #container{
+    width:100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  a{
+    color: #333;
+  }
+  
+  a:hover{
+     text-decoration: none;   
+  }
+
+
+/* container */
+.wrapper{
+    width:100%;
+    background-color:#fafafa;
+}
+.wrapper .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+@media (min-width: 992px) {
+    .wrapper .container .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.wrapper .content-item {
+    width:100%;
+}
+@media (min-width: 992px) {
+    .wrapper .content-item {
+        width:50%;
+    }
+}
+.wrapper .image{
+    display:block;
+    max-width:100%;
+    margin:0px auto;
+}
+.wrapper .text{
+    padding:50px;
+}
+.wrapper .text .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+.text p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+  
 
   
   .g-slide{
