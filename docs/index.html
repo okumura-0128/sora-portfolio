@@ -138,31 +138,44 @@
             <h3 id="contact">Contact</h3>
 
 
-            <h3 id="Ten's daily life photos">Ten's daily life photos</h3>
-            <ul class="gallery">
-                <li><a href="img/aozora.jpeg" data-lightbox="gallery1" data-title="きれいな青空だ"><img src="img/aozora.jpeg" alt=""></a></li>
-                <li><a href="img/usj_raito.jpg" data-lightbox="gallery1" data-title="ユニバでのツーショット"><img src="img/usj_raito.jpg" alt=""></a></li>
-                <li><a href="img/dokomiteru_hayaki.JPG" data-title="どこを向いてるんだかこのスヌーピーたちは"><img src="img/dokomiteru_hayaki.JPG" alt=""></a></li>
-                <li><a href="img/hanabi.JPG" data-lightbox="gallery1" data-title="きれい花火"><img src="img/hanabi.JPG" alt=""></a></li>
-                <li><a href="img/tenimura3.jpeg" data-lightbox="gallery1" data-title="テニむらです"><img src="img/tenimura3.jpeg" alt=""></a></li>
-                <li><a href="img/radwimps.jpg" data-lightbox="gallery2" data-title="初めてのライブRADWIMPS"><img src="img/radwimps.jpg" alt=""></a></li>
-                <li><a href="img/hansya.JPG" data-lightbox="gallery1" data-title="反射してるきれいな写真"><img src="img/hansya.JPG" alt=""></a></li>
-                <li><a href="img/minnnakao.jpeg" data-lightbox="gallery1" data-title="大阪に旅行しに行った時の写真"><img src="img/minnnakao.jpeg" alt=""></a></li>
-                <li><a href="img/nyugakusiki.JPG" data-lightbox="gallery1" data-title="入学式で浮いてる奥村"><img src="img/nyugakusiki.JPG" alt=""></a></li>
-                <li><a href="img/sunu-piokumura.JPG" data-lightbox="gallery1" data-title="ユニバでスヌーピーになった時の写真"><img src="img/sunu-piokumura.JPG" alt=""></a></li>
-                <li><a href="img/okumurasora.JPG" data-lightbox="gallery1" data-title="バンクシー展に行った時の写真"><img src="img/okumurasora.JPG" alt=""></a></li>
-                <li><a href="img/ikimonodarakeokumura.JPG" data-lightbox="gallery1" data-title="無理やり取らされた写真"><img src="img/ikimonodarakeokumura.JPG" alt=""></a></li>
-                <li><a href="img/syasinnokumura.jpeg" data-lightbox="gallery1" data-title="江ノ島で撮られた写真"><img src="img/syasinnokumura.jpeg" alt=""></a></li>
-                <li><a href="img/yuuhi.JPG" data-lightbox="gallery2" data-title="きれいな夕日"><img src="img/yuuhi.JPG" alt=""></a></li>
-                <li><a href="img/usj_raito2.JPG" data-lightbox="gallery1" data-title="友達とユニバで撮った写真"><img src="img/usj_raito2.JPG" alt=""></a></li>
-                <li><a href="img/tenimura2.JPG" data-lightbox="gallery1" data-title="シングルスの大会に出た奥村"><img src="img/tenimura2.JPG" alt=""></a></li>
-                <li><a href="img/yozakura.JPG" data-lightbox="gallery2" data-title="きれいな夜桜"><img src="img/yozakura.JPG" alt=""></a></li>
-                <li><a href="img/tennis_okumura.JPG" data-lightbox="gallery1" data-title="サーブを打った奥村"><img src="img/tennis_okumura.JPG" alt=""></a></li>
-              </ul>
 
 
 
-
+    <h3 id="Ten's daily life photos">Ten's daily life photos</h3>
+    <!-- 折り畳み展開ポインタ -->
+    <div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+        <a style="cursor:pointer;">▼ クリックで展開</a>
+        </div>
+        <!--// 折り畳み展開ポインタ -->
+        
+        <!-- 折り畳まれ部分 -->
+        <div id="open" style="display:none;clear:both;">
+        
+        <!--ここの部分が折りたたまれる＆展開される部分になります。
+        自由に記述してください。-->
+        <!-- <h3 id="Ten's daily life photos">Ten's daily life photos</h3> -->
+        <ul class="gallery">
+            <li><a href="img/aozora.jpeg" data-lightbox="gallery1" data-title="きれいな青空だ"><img src="img/aozora.jpeg" alt=""></a></li>
+            <li><a href="img/usj_raito.jpg" data-lightbox="gallery1" data-title="ユニバでのツーショット"><img src="img/usj_raito.jpg" alt=""></a></li>
+            <li><a href="img/dokomiteru_hayaki.JPG" data-title="どこを向いてるんだかこのスヌーピーたちは"><img src="img/dokomiteru_hayaki.JPG" alt=""></a></li>
+            <li><a href="img/hanabi.JPG" data-lightbox="gallery1" data-title="きれい花火"><img src="img/hanabi.JPG" alt=""></a></li>
+            <li><a href="img/tenimura3.jpeg" data-lightbox="gallery1" data-title="テニむらです"><img src="img/tenimura3.jpeg" alt=""></a></li>
+            <li><a href="img/radwimps.jpg" data-lightbox="gallery2" data-title="初めてのライブRADWIMPS"><img src="img/radwimps.jpg" alt=""></a></li>
+            <li><a href="img/hansya.JPG" data-lightbox="gallery1" data-title="反射してるきれいな写真"><img src="img/hansya.JPG" alt=""></a></li>
+            <li><a href="img/minnnakao.jpeg" data-lightbox="gallery1" data-title="大阪に旅行しに行った時の写真"><img src="img/minnnakao.jpeg" alt=""></a></li>
+            <li><a href="img/nyugakusiki.JPG" data-lightbox="gallery1" data-title="入学式で浮いてる奥村"><img src="img/nyugakusiki.JPG" alt=""></a></li>
+            <li><a href="img/sunu-piokumura.JPG" data-lightbox="gallery1" data-title="ユニバでスヌーピーになった時の写真"><img src="img/sunu-piokumura.JPG" alt=""></a></li>
+            <li><a href="img/okumurasora.JPG" data-lightbox="gallery1" data-title="バンクシー展に行った時の写真"><img src="img/okumurasora.JPG" alt=""></a></li>
+            <li><a href="img/ikimonodarakeokumura.JPG" data-lightbox="gallery1" data-title="無理やり取らされた写真"><img src="img/ikimonodarakeokumura.JPG" alt=""></a></li>
+            <li><a href="img/syasinnokumura.jpeg" data-lightbox="gallery1" data-title="江ノ島で撮られた写真"><img src="img/syasinnokumura.jpeg" alt=""></a></li>
+            <li><a href="img/yuuhi.JPG" data-lightbox="gallery2" data-title="きれいな夕日"><img src="img/yuuhi.JPG" alt=""></a></li>
+            <li><a href="img/usj_raito2.JPG" data-lightbox="gallery1" data-title="友達とユニバで撮った写真"><img src="img/usj_raito2.JPG" alt=""></a></li>
+            <li><a href="img/tenimura2.JPG" data-lightbox="gallery1" data-title="シングルスの大会に出た奥村"><img src="img/tenimura2.JPG" alt=""></a></li>
+            <li><a href="img/yozakura.JPG" data-lightbox="gallery2" data-title="きれいな夜桜"><img src="img/yozakura.JPG" alt=""></a></li>
+            <li><a href="img/tennis_okumura.JPG" data-lightbox="gallery1" data-title="サーブを打った奥村"><img src="img/tennis_okumura.JPG" alt=""></a></li>
+        </ul>
+        </div>
+        <!--// 折り畳まれ部分 -->
             <footer>©︎2022 Sora Okumura</footer>
         </main>
     </div>
