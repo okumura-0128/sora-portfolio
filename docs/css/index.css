@@ -425,7 +425,7 @@ opacity: 0;
 }
 
 .slider iframe {
-  width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+  width:80vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
   height:auto;
 }
 
