@@ -10,7 +10,7 @@
     	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
@@ -48,6 +48,7 @@
                         </div>    
                         <div class="content-item">
                             <div class="text">
+                                <div id="wrapper">
                                 <h2 class="heading">オクムラのポートフォリオ</h2>
                                 <p>〜つよつよになりたい〜</p>
                             </div>
@@ -96,12 +97,17 @@
             </div>
             <h3 id="works">Works</h3>
             
-            <h2>1年未来創造</h2>
+            <h2>未来創造</h2>
             
-            <div class="g-slide">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZMUvz6NexJfqqWb1gYHWSCNOk-asduhKsMV9v4OpQNq6WodYXY4N5QOCblbKbvCTtwsPa9eXB8djS/embed?start=false&loop=false&delayms=3000" frameborder="0"width="600" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
-            
+            <ul class="slider">
+                <li><img src="https://docs.google.com/presentation/d/1v7bbJyT9hdUAeZw5MGGw8AGhhLWHliqfHgIrgXXs13I/edit?usp=sharing" alt=""></li>
+                <li><img src="https://docs.google.com/presentation/d/1wNW7XyaMPD7VXdAFqdMQWLChLvpkBEgabRw_zKXXZBg/edit?usp=sharing" alt=""></li>
+                <li><img src="https://docs.google.com/presentation/d/1yTX34DI9rRP-hwhOaLulqd2Z-E9b9fXh-GBiMPEX_SI/edit?usp=sharing" alt=""></li>
+                <li><img src="https://docs.google.com/presentation/d/1qo7r1txJqKKLBLK3QMZrwYvDU7si0yRdsOXTElekEVc/edit?usp=sharing" alt=""></li>
+                <!--/slider--></ul>
+
+
+
             <p>使用したスキル</p>
             <li>html</li>
             <li>css</li>
@@ -198,6 +204,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!--IE11用-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
@@ -205,6 +212,7 @@
 <script src="js/yomikomi.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/navgesion.js"></script>
+<script src="js/slide.js"></script>
 
 </body>
 </html>
