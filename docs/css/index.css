@@ -356,7 +356,7 @@ opacity: 0;
 
 
 
-/* 
+
 
 .before1{
   columns: 5;/*段組みの数*/
@@ -397,54 +397,11 @@ opacity: 0;
 
 
 
-/* 自己評価の星 */
-.star {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 2px;
-  position: relative;
-}
-
-.star::before {
-  content: "\2605";
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.star::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-}
-
-.rating:hover .star::after {
-  background-color: gold;
-}
-
-.rating .star:hover ~ .star::after {
-  background-color: transparent;
-}
-
-.rating .star:hover::after {
-  background-color: gold;
-  background-image: linear-gradient(to right, gold, orange, red);
-}
 
 
 
 
-
-
-
- */
+ 
 
 .before1{
   padding: 10px;
